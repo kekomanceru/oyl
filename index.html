@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<body style="background-color: #ffb8d2;">
  <head>
- <link rel="icon" type="image/png" href="us.jpg" />
-<link rel="apple-touch-icon" sizes="180x180" href = "us.jpg"/>
-  <title>oyl</title>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+ <link rel="icon" type="image/png" href="icon.jpg" >
+<link rel="apple-touch-icon" sizes="180x180" href = "us.jpg">
+  <title>🌼oyl🌼</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" rel="stylesheet">
  </head>
  <body>
- <h1> 🦆 oyl</h1>
+ 
+ <div class = "topnav">
+ <h1> oyl</h1>
+ </div>
+
  <p></p>
- <p>🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆</p>
- <img src="fan.jpg">
+ <div class = "cicekarea">
+  <p id ="daily"></p>
+ <img id = "myImg">
+ </div>
+
+ <script>
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);}
+ const cicekler = ["neşeli çiçek", "güne açan çiçek", "şaşkın çiçek ", "mızmız çiçek", "öfkeli çiçek"];
+  let x = getRandomInt(4);
+  let cicek = cicekler[x];
+  document.getElementById("daily").innerHTML= cicek;
+  if(x ==  0 ){
+  document.getElementById("myImg").src = "neseli.jpg";
+  }
+  else if(x == 1 ){
+  document.getElementById("myImg").src = "sunshine.jpg";
+  }
+  else if(x == 2){
+  document.getElementById("myImg").src = "saskin.jpg";
+  }
+  else if(x == 3 ){
+  document.getElementById("myImg").src = "mizmiz.jpg";
+  }
+  else if(x == 4 ){
+  document.getElementById("myImg").src = "ofkeli.jpg";
+  }
+
+
+ </script>
  <p></p>
- <img src="prty.jpg">
- <p></p>
- <img src="us.jpg">
- <p></p>
+ <p>🌼 Hiçbir çiçek ne kadar sevildiğini unutamasın..</p>
+
+<p style = "font-size:12px;">
+And more I admire 
+Thy distant fire, 
+Than that colder, lowly light.
+</p>
  </body>
 </html>
